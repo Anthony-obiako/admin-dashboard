@@ -5,7 +5,7 @@ const DarkModeReducer = (state, action) => {
         darkMode: false,
       };
     }
-    case "Dark": {
+    case "DARK": {
       return {
         darkMode: true,
       };
