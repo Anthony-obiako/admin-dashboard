@@ -31,6 +31,7 @@ const Datatable = () => {
         </Link>
       </div>
       <DataGrid
+        className="datagrid"
         rows={rows}
         columns={columns.concat(actionColumn)}
         initialState={{

@@ -55,7 +55,7 @@ const List = () => {
       status: "Pending",
     },
     {
-      id: 137562,
+      id: 197654,
       product: "Infinix Hot 12",
       customer: "Gbenga Abdulkareem",
       date: "30 May",
@@ -69,25 +69,25 @@ const List = () => {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell className="tablecell">Transaction ID</TableCell>
-            <TableCell className="tablecell">Product</TableCell>
-            <TableCell className="tablecell">Customer</TableCell>
-            <TableCell className="tablecell">Date</TableCell>
-            <TableCell className="tablecell">Amount</TableCell>
-            <TableCell className="tablecell">Payment Method</TableCell>
-            <TableCell className="tablecell">Status</TableCell>
+            <TableCell className="tableCell">Transaction ID</TableCell>
+            <TableCell className="tableCell">Product</TableCell>
+            <TableCell className="tableCell">Customer</TableCell>
+            <TableCell className="tableCell">Date</TableCell>
+            <TableCell className="tableCell">Amount</TableCell>
+            <TableCell className="tableCell">Payment Method</TableCell>
+            <TableCell className="tableCell">Status</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
-              <TableCell>{row.id}</TableCell>
-              <TableCell className="tablecell">{row.product}</TableCell>
-              <TableCell className="tablecell">{row.customer}</TableCell>
-              <TableCell className="tablecell">{row.date}</TableCell>
-              <TableCell className="tablecell">{row.amount}</TableCell>
-              <TableCell className="tablecell">{row.method}</TableCell>
-              <TableCell className="tablecell">
+              <TableCell className="tableCell">{row.id}</TableCell>
+              <TableCell className="tableCell">{row.product}</TableCell>
+              <TableCell className="tableCell">{row.customer}</TableCell>
+              <TableCell className="tableCell">{row.date}</TableCell>
+              <TableCell className="tableCell">{row.amount}</TableCell>
+              <TableCell className="tableCell">{row.method}</TableCell>
+              <TableCell className="tableCell">
                 <span className={`status ${row.status}`}>{row.status}</span>
               </TableCell>
             </TableRow>
